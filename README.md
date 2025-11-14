@@ -9,15 +9,17 @@ Descarga automática de Workcenter Log desde Plex Cloud y subida a Google Drive.
    - Conecta: `https://github.com/miguelsot0b/workcenter-log`
    - Render detecta automáticamente `render.yaml`
 
-2. **Configura la variable de entorno:**
+2. **Configura las variables de entorno:**
    
-   Solo necesitas configurar:
    ```
+   PLEX_USERNAME = miguel.soto.ha
+   PLEX_PASSWORD = Welcome0028
+   GOOGLE_DRIVE_FILE_ID = 1axLJlFa9wIkQS-z_Q1aptfGRjeDPHLwu
    GOOGLE_SERVICE_ACCOUNT_BASE64 = [base64 del JSON]
    ```
    
-   Para generar el base64:
-   ```bash
+   Para generar el base64 del JSON:
+   ```powershell
    # Windows PowerShell
    [Convert]::ToBase64String([System.IO.File]::ReadAllBytes("wlog-henniges-33bd4d15bfe8.json"))
    
@@ -27,12 +29,7 @@ Descarga automática de Workcenter Log desde Plex Cloud y subida a Google Drive.
 
 3. **Click Apply** - ¡Listo!
 
-## Variables Configuradas
-
-Estas ya están en `render.yaml`:
-- `PLEX_USERNAME`: miguel.soto.ha
-- `PLEX_PASSWORD`: Welcome0028
-- `GOOGLE_DRIVE_FILE_ID`: 1axLJlFa9wIkQS-z_Q1aptfGRjeDPHLwu
+El cronjob se ejecutará cada 10 minutos.
 
 ## � Desarrollo Local
 

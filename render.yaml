@@ -8,10 +8,10 @@ services:
     branch: main
     envVars:
       - key: PLEX_USERNAME
-        value: miguel.soto.ha
+        sync: false
       - key: PLEX_PASSWORD
-        value: Welcome0028
+        sync: false
       - key: GOOGLE_SERVICE_ACCOUNT_BASE64
         sync: false
       - key: GOOGLE_DRIVE_FILE_ID
-        value: 1axLJlFa9wIkQS-z_Q1aptfGRjeDPHLwu
+        sync: false
