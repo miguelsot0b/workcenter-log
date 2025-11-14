@@ -1,0 +1,29 @@
+# Directorios
+downloads/
+__pycache__/
+
+# Archivos Python
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Archivos sensibles
+config.py
+wlog-henniges-33bd4d15bfe8.json
+*.json
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db

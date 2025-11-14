@@ -1,0 +1,17 @@
+services:
+  - type: cron
+    name: workcenter-log-cronjob
+    env: docker
+    schedule: "*/10 * * * *"  # Ejecutar cada 10 minutos
+    dockerfilePath: ./Dockerfile
+    repo: https://github.com/miguelsot0b/workcenter-log
+    branch: main
+    envVars:
+      - key: PLEX_USERNAME
+        value: miguel.soto.ha
+      - key: PLEX_PASSWORD
+        value: Welcome0028
+      - key: GOOGLE_SERVICE_ACCOUNT_BASE64
+        sync: false
+      - key: GOOGLE_DRIVE_FILE_ID
+        value: 1axLJlFa9wIkQS-z_Q1aptfGRjeDPHLwu
